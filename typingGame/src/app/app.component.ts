@@ -1,0 +1,16 @@
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { GameComponent } from './game/game.component';
+import { NgFor, NgIf } from '@angular/common';
+import { lorem } from 'faker';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet, GameComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  title ='typing';
+}
